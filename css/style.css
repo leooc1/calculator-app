@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    /*theme 1*/
+    /*Backgrounds*/
+    --MainBackground1: hsl(222, 26%, 31%);
+    --KeypadBackground1: hsl(223, 31%, 20%);
+    --ScreenBackground1: hsl(224, 36%, 15%);
+    /*Keys*/
+    --DarkBlueKeyBackground: hsl(225, 21%, 49%);
+    --DarkBlueKeyShadow: hsl(224, 28%, 35%);
+
+    --RedKeyBackground: hsl(6, 63%, 50%);
+    --DarkRedKeyShadow: hsl(6, 70%, 34%);
+
+    --LightGrayishOrangeKeyBackground: hsl(30, 25%, 89%);
+    --GrayishOrangeKeyShadow: hsl(28, 16%, 65%);
+    /*Text*/
+    --VeryDarkGrayishBlue: hsl(221, 14%, 31%);
+    --White: hsl(0, 0%, 100%);
+
+    /*theme 2*/
+    /*Backgrounds*/
+    --LightGrayMainBackground: hsl(0, 0%, 90%);
+    --GrayishRedKeypadBackground: hsl(0, 5%, 81%);
+    --VeryLightGrayScreenBackground: hsl(0, 0%, 93%);
+    /*Keys*/
+    --Darkackground: hsl(185, 42%, 37%);
+    --shadow: hsl(185, 58%, 25%);
+
+    --Orangekey: hsl(25, 98%, 40%);
+    --Darkkey: hsl(25, 99%, 27%)
+
+    --Lightgrayishyellowkeybackground: hsl(45, 7%, 89%);
+    --Darkgrayishorangekeyshadow: hsl(35, 11%, 61%);
+    /*Text*/
+    --Veryarkgrayish: hsl(60, 10%, 19%);
+    --Whitetext: hsl(0, 0%, 100%);
+
+    /*theme 3*/
+    /*Backgrounds*/
+    --Verydarkviolemainackground: hsl(268, 75%, 9%);
+    --Veryvioletbackgroundbackgroundbackground: hsl(268, 71%, 12%);
+    /*Keys*/
+    --Darkkeybackground: hsl(281, 89%, 26%);
+    --Vividkeyshadow: hsl(285, 91%, 52%);
+
+    --Purebackgroundtoggle: hsl(176, 100%, 44%);
+    --Soft: hsl(177, 92%, 70%);
+
+    --Verydarkkeybackground: hsl(268, 47%, 21%);
+    --Darkkeyshadow: hsl(290, 70%, 36%);
+    /*Text*/
+    --Lightellow: hsl(52, 100%, 62%);
+    --Verydarkblue: hsl(198, 20%, 13%);
+    --Whiteext: hsl(0, 0%, 100%);
+
+    --font: 'League Spartan', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px){
+    body{
+        background-color: aqua;
+    }
+}
