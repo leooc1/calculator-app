@@ -62,7 +62,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition-duration: .2s;
+    /* transition-duration: .2s; */
 }
 
 body{
@@ -72,6 +72,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 header{
@@ -184,4 +185,28 @@ button{
     font-weight: 700;
     border-radius: 10px;
     border: 0px;
+}
+
+@media (max-width: 522px){
+    header{
+        width: 370px;
+    }
+
+    .screen{
+        width: 370px;
+    }
+
+    .botoes{
+        grid-template-columns: 70px 70px 70px 70px;
+        grid-template-rows: 60px 60px 60px 60px;
+        gap: 15px;
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .bottom-buttons{
+        grid-template-columns: 155px 155px;
+        grid-template-rows: 60px;
+        gap: 15px;
+    }
 }
