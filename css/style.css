@@ -73,14 +73,13 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    scale: 90%;
 }
 
 header{
     width: 520px;
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 6px;
 }
 
 .logo{
@@ -149,7 +148,7 @@ header{
     text-align: right;
     width: 520px;
     padding: 30px 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 10px;
     border: 0px;
 
