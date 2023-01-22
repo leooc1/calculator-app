@@ -1,0 +1,145 @@
+/*===== THEMA 1 =====*/
+.main-bg-1{
+    background-color: var(--main-bgcolor-1);
+}
+
+.top-colors-1{
+    color: var(--screen-color-1);
+}
+
+.slide-color-1{
+    background-color: var(--keypad-bgcolor-1);
+}
+
+.ball-color-1{
+    background-color: var(--calc-bgcolor-1);
+}
+
+.screen-1{
+    background-color: var(--screen-bgcolor-1);
+    color: var(--screen-color-1);
+}
+
+.screen-1::placeholder{
+    color: var(--screen-color-1);
+}
+
+.keypad-bg-1{
+    background-color: var(--keypad-bgcolor-1);
+}
+
+.op-buttons-1{
+    background-color: var(--op-bgcolor-1);
+    border-bottom: 4px solid var(--op-shadow-1);
+    color: var(--op-txtcolor-1);
+}
+
+.del-buttons-1{
+    background-color: var(--del-bgcolor-1);
+    border-bottom: 4px solid var(--del-shadow-1);
+    color: var(--screen-color-1);
+}
+
+.calc-button-1{
+    background-color: var(--calc-bgcolor-1);
+    border-bottom: 4px solid var(--calc-shadow-1);
+    color: var(--screen-color-1);
+}
+
+/*===== THEMA 2 =====*/
+
+.main-bg-2{
+    background-color: var(--main-bgcolor-2);
+}
+
+.top-colors-2{
+    color: var(--op-txtcolor-2);
+}
+
+.slide-color-2{
+    background-color: var(--keypad-bgcolor-2);
+}
+
+.ball-color-2{
+    background-color: var(--calc-bgcolor-2);
+}
+
+.screen-2{
+    background-color: var(--screen-bgcolor-2);
+    color: var(--op-txtcolor-2);
+}
+
+.screen-2::placeholder{
+    color: var(--op-txtcolor-2);
+}
+
+.keypad-bg-2{
+    background-color: var(--keypad-bgcolor-2);
+}
+
+.op-buttons-2{
+    background-color: var(--op-bgcolor-2);
+    border-bottom: 4px solid var(--op-shadow-2);
+    color: var(--op-txtcolor-2);
+}
+
+.del-buttons-2{
+    background-color: var(--del-bgcolor-2);
+    border-bottom: 4px solid var(--del-shadow-2);
+    color: var(--screen-color-2);
+}
+
+.calc-button-2{
+    background-color: var(--calc-bgcolor-2);
+    border-bottom: 4px solid var(--calc-shadow-2);
+    color: var(--screen-color-2);
+}
+
+/*===== THEME 3 =====*/
+
+.main-bg-3{
+    background-color: var(--main-bgcolor-3);
+}
+
+.top-colors-3{
+    color: var(--numbers-txtcolor-3);
+}
+
+.slide-color-3{
+    background-color: var(--kp-screen-bgcolor-3);
+}
+
+.ball-color-3{
+    background-color: var(--calc-bgcolor-3);
+}
+
+.screen-3{
+    background-color: var(--kp-screen-bgcolor-3);
+    color: var(--numbers-txtcolor-3);
+}
+
+.screen-3::placeholder{
+    color: var(--numbers-txtcolor-3);
+}
+
+.keypad-bg-3{
+    background-color: var(--kp-screen-bgcolor-3);
+}
+
+.op-buttons-3{
+    background-color: var(--op-bgcolor-3);
+    border-bottom: 4px solid var(--op-shadow-3);
+    color: var(--numbers-txtcolor-3);
+}
+
+.del-buttons-3{
+    background-color: var(--del-bgcolor-3);
+    border-bottom: 4px solid var(--del-shadow-3);
+    color: var(--del-txtcolor-3);
+}
+
+.calc-button-3{
+    background-color: var(--calc-bgcolor-3);
+    border-bottom: 4px solid var(--calc-shadow-3);
+    color: var(--screen-color-3);
+}

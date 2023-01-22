@@ -3,69 +3,185 @@
 :root{
     /*theme 1*/
     /*Backgrounds*/
-    --MainBackground1: hsl(222, 26%, 31%);
-    --KeypadBackground1: hsl(223, 31%, 20%);
-    --ScreenBackground1: hsl(224, 36%, 15%);
+    --main-bgcolor-1: #3a4764;
+    --keypad-bgcolor-1: #232c43;
+    --screen-bgcolor-1: #182034;
     /*Keys*/
-    --DarkBlueKeyBackground: hsl(225, 21%, 49%);
-    --DarkBlueKeyShadow: hsl(224, 28%, 35%);
+    --del-bgcolor-1: #637097;
+    --del-shadow-1: #404e72;
 
-    --RedKeyBackground: hsl(6, 63%, 50%);
-    --DarkRedKeyShadow: hsl(6, 70%, 34%);
+    --calc-bgcolor-1: #d03f2f;
+    --calc-shadow-1: #93261a;
 
-    --LightGrayishOrangeKeyBackground: hsl(30, 25%, 89%);
-    --GrayishOrangeKeyShadow: hsl(28, 16%, 65%);
+    --op-bgcolor-1: #eae3dc;
+    --op-shadow-1: #b4a597;
     /*Text*/
-    --VeryDarkGrayishBlue: hsl(221, 14%, 31%);
-    --White: hsl(0, 0%, 100%);
+    --op-txtcolor-1: #444b5a;
+    --screen-color-1: #ffffff;
 
     /*theme 2*/
     /*Backgrounds*/
-    --LightGrayMainBackground: hsl(0, 0%, 90%);
-    --GrayishRedKeypadBackground: hsl(0, 5%, 81%);
-    --VeryLightGrayScreenBackground: hsl(0, 0%, 93%);
+    --main-bgcolor-2: #e6e6e6;
+    --keypad-bgcolor-2: #d1cccc;
+    --screen-bgcolor-2: #ededed;
     /*Keys*/
-    --Darkackground: hsl(185, 42%, 37%);
-    --shadow: hsl(185, 58%, 25%);
+    --del-bgcolor-2: #377f86;
+    --del-shadow-2: #1b5f65;
 
-    --Orangekey: hsl(25, 98%, 40%);
-    --Darkkey: hsl(25, 99%, 27%)
+    --calc-bgcolor-2: #ca5502;
+    --calc-shadow-2: #893901;
 
-    --Lightgrayishyellowkeybackground: hsl(45, 7%, 89%);
-    --Darkgrayishorangekeyshadow: hsl(35, 11%, 61%);
+    --op-bgcolor-2: #e5e4e1;
+    --op-shadow-2: #a69d91;
     /*Text*/
-    --Veryarkgrayish: hsl(60, 10%, 19%);
-    --Whitetext: hsl(0, 0%, 100%);
+    --op-txtcolor-2: #35352c;
+    --screen-color-2: #ffffff;
 
     /*theme 3*/
     /*Backgrounds*/
-    --Verydarkviolemainackground: hsl(268, 75%, 9%);
-    --Veryvioletbackgroundbackgroundbackground: hsl(268, 71%, 12%);
+    --main-bgcolor-3: #160628;
+    --kp-screen-bgcolor-3: #1d0934;
     /*Keys*/
-    --Darkkeybackground: hsl(281, 89%, 26%);
-    --Vividkeyshadow: hsl(285, 91%, 52%);
+    --del-bgcolor-3: #58077d;
+    --del-shadow-3: #bc15f4;
 
-    --Purebackgroundtoggle: hsl(176, 100%, 44%);
-    --Soft: hsl(177, 92%, 70%);
+    --calc-bgcolor-3: #00e0d1;
+    --calc-shadow-3: hwb(177 42% 2%);
 
-    --Verydarkkeybackground: hsl(268, 47%, 21%);
-    --Darkkeyshadow: hsl(290, 70%, 36%);
+    --op-bgcolor-3: #341c4f;
+    --op-shadow-3: #871c9c;
     /*Text*/
-    --Lightellow: hsl(52, 100%, 62%);
-    --Verydarkblue: hsl(198, 20%, 13%);
-    --Whiteext: hsl(0, 0%, 100%);
+    --numbers-txtcolor-3: #ffe53d;
+    --calc-txtcolor-3: #1b2428;
+    --del-txtcolor-3: #ffffff;
 
-    --font: 'League Spartan', sans-serif;
+    --fonte: 'League Spartan', sans-serif;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition-duration: .2s;
 }
 
-@media (max-width: 900px){
-    body{
-        background-color: aqua;
-    }
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 520px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.logo{
+    font-family: var(--fonte);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.theme-slider{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.theme{
+    font-family: var(--fonte);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.slider{
+    padding: 0px 2px;
+    border-radius: 10px;
+    width: 70px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#number-theme1{
+    font-family: var(--fonte);
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: -12px;
+    left: 6px;
+}
+
+#number-theme2{
+    font-family: var(--fonte);
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: -12px;
+    left: 32px;
+}
+
+#number-theme3{
+    font-family: var(--fonte);
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: -12px;
+    left: 57px;
+}
+
+.bolinha{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.screen{
+    text-align: right;
+    width: 520px;
+    padding: 30px 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 0px;
+
+    font-family: var(--fonte);
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.screen::placeholder{
+    font-family: var(--fonte);
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.botoes{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 60px 60px 60px 60px;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.bottom-buttons{
+    display: grid;
+    grid-template-columns: 220px 220px;
+    grid-template-rows: 60px;
+    gap: 20px;
+}
+
+button{
+    font-family: var(--fonte);
+    font-size: 32px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 0px;
 }

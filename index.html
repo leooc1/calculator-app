@@ -4,44 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/themes.css">
 </head>
-<body>
-    <header>
-        <p>calc</p>
-        <div>
-            <p>THEME</p>
-            <div class="slider">
-                <div class="bolinha">
+<body class="main-bg-1">
+    <header class="top-colors-1">
+        <p class="logo">calc</p>
+        <div class="theme-slider">
+            <p class="theme">THEME</p>
+            <div class="slider slide-color-1" onclick="tradeTheme2()">
+                <p id="number-theme1">1</p>
+                <p id="number-theme2">2</p>
+                <p id="number-theme3">3</p>
+                <div class="bolinha ball-color-1">
 
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <input type="text" placeholder="0" disabled>
-        <div class="botoes">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>DEL</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>+</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>-</button>
-            <button>.</button>
-            <button>0</button>
-            <button>/</button>
-            <button>x</button>
-            <button>RESET</button>
-            <button>=</button>
+        <input class="screen screen-1" type="text" placeholder="0" disabled>
+        <div class="botoes keypad-bg-1">
+            <button class="button-op-num op-buttons-1">7</button>
+            <button class="button-op-num op-buttons-1">8</button>
+            <button class="button-op-num op-buttons-1">9</button>
+            <button class="buttons-del del-buttons-1">DEL</button>
+            <button class="button-op-num op-buttons-1">4</button>
+            <button class="button-op-num op-buttons-1">5</button>
+            <button class="button-op-num op-buttons-1">6</button>
+            <button class="button-op-num op-buttons-1">+</button>
+            <button class="button-op-num op-buttons-1">1</button>
+            <button class="button-op-num op-buttons-1">2</button>
+            <button class="button-op-num op-buttons-1">3</button>
+            <button class="button-op-num op-buttons-1">-</button>
+            <button class="button-op-num op-buttons-1">.</button>
+            <button class="button-op-num op-buttons-1">0</button>
+            <button class="button-op-num op-buttons-1">/</button>
+            <button class="button-op-num op-buttons-1">x</button>
+            <div class="bottom-buttons">
+                <button class="buttons-del del-buttons-1">RESET</button>
+                <button class="equal calc-button-1">=</button>
+            </div>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
